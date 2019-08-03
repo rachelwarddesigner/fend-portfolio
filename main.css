@@ -1,0 +1,220 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #424242;
+}
+
+/* Text Styles */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.6em;
+
+  color: #7d97ad;
+}
+
+h4 {
+  font-size: 1.6em;
+
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #009bf5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header Styles */
+
+.header {
+  border-bottom: 4px solid #7d97ad;
+  min-height: 56px;
+  margin: 2em;
+}
+
+.header-inner {
+  width: 100%;
+  padding: 1em;
+}
+
+.header-logo {
+  height: 80px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-title,
+.header-subtitle {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.header-title {
+  font-weight: 100;
+  font-size: 3.6em;
+}
+
+.header-subtitle {
+  font-weight: 300;
+  font-size: 1.6em;
+  float: right;
+}
+
+/* Hero Image Styles */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("images/chris-ried-ieic5Tq8YMk-unsplash.jpg");
+  background-size: cover;
+  min-height: 480px;
+}
+
+.intro {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 2em;
+}
+
+/* Featured Work Style */
+
+.title {
+  margin: 0.6em 1em;
+}
+
+/* Card Styles */
+
+.container {
+  padding: 0 2em;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 300px;
+  height: 240px;
+  margin: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+}
+
+.appify,
+.sunflower,
+.bokeh {
+  background-size: cover;
+  padding: 1em;
+}
+
+.appify {
+  background-image: url(images/adi-goldstein-mDinBvq1Sfg-unsplash.jpg);
+}
+
+.sunflower {
+  background-image: url(images/kobu-agency-67L18R4tW_w-unsplash.jpg);
+}
+
+.bokeh {
+  background-image: url(images/kobu-agency-ipARHaxETRk-unsplash.jpg);
+}
+
+.card-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  color: #fff;
+}
+
+/* Footer Styles */
+
+.footer {
+  padding: 2em;
+  margin-top: 1.4em;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social a {
+  margin: 0 4px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .header {
+    margin: 1em;
+  }
+
+  .header-logo {
+    height: 44px;
+    box-sizing: border-box;
+    margin-right: 8px;
+  }
+
+  .header-title {
+    font-size: 1.8em;
+  }
+
+  .header-subtitle {
+    font-size: 1.2em;
+  }
+
+  .hero {
+    min-height: 320px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .title {
+    margin: 0.6em 1em;
+  }
+
+  .container {
+    padding: 0.8em;
+  }
+}
